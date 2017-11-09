@@ -1,0 +1,21 @@
+<div class='container'>
+  <ul class='user-details'>
+    <Li><h2><B>User: </B>{{user.name}}</h2></Li>
+    <Li>
+      <ul>
+        <li><b>Address:</b></li>
+        <li>{{ user.address.suite }} {{ user.address.street }}</li>
+        <li>{{ user.address.city }}, {{ user.address.zipcode }}</li>
+      </ul>
+    </Li>
+    <Li>
+      <ul>
+        <li><b>Company:</b></li>
+        <li>{{ user.company.name }} </li>
+        <li>{{ user.company.catchPhrase }}</li>
+      </ul>
+    </Li>
+    <Li><a href='http://{{ user.website }}'>Visit Website</a></Li>
+    <Li><a href='mailto:{{ user.email }}'>Email User</a></Li>
+  </ul>
+</div>
